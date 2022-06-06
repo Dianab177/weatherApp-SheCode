@@ -30,7 +30,6 @@ form.addEventListener("submit", search);
 
 // // search degrees function
 function showCity(response) {
-  console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
   let degrees = document.querySelector("#degrees");
   degrees.innerHTML = `${temperature}ºC`;
